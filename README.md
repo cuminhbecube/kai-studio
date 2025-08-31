@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# K.A.I Architect Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website giới thiệu công ty thiết kế kiến trúc và nội thất K.A.I Architect của KTS. Trương Đình Nguyễn Trường.
 
-## Available Scripts
+## Thông tin dự án
 
-In the project directory, you can run:
+- **Công ty**: K.A.I Architect
+- **Kiến trúc sư**: KTS. Trương Đình Nguyễn Trường
+- **Lĩnh vực**: Thiết kế kiến trúc & nội thất
+- **Công nghệ**: React 19.1.1, Create React App
 
-### `npm start`
+## Tính năng website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🏠 Các trang chính
+- **Hero**: Giới thiệu và thông điệp chính
+- **Về chúng tôi**: Thông tin công ty và điểm mạnh
+- **Dịch vụ**: Thiết kế kiến trúc, nội thất, 3D/VR, thi công trọn gói
+- **Dự án**: Portfolio công trình đã thực hiện
+- **Liên hệ**: Form và thông tin liên lạc
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📱 Tích hợp liên lạc
+- **Email**: Truongcamlbn@gmail.com
+- **Điện thoại**: 0941 905 990, 0345 629 288
+- **Zalo**: 0941 905 990 (nút floating)
 
-### `npm test`
+### 🖼️ Gallery & Media
+- Gallery "Gia đình Minh Anh" với 12 hình ảnh thực tế
+- Lightbox với navigation, responsive design
+- Lazy loading cho tối ưu performance
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎨 Thiết kế
+- Dark theme hiện đại với gradient background
+- Responsive: desktop, tablet, mobile
+- Typography và spacing tối ưu
+- Hover effects và transitions mượt mà
 
-### `npm run build`
+## Cài đặt và chạy dự án
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cài đặt dependencies
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Chạy development server
+```bash
+npm start
+```
+Website sẽ chạy tại [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Build production
+```bash
+npm run build
+```
+Tạo bản build tối ưu trong thư mục `build/`
 
-### `npm run eject`
+### Chạy tests
+```bash
+npm test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Cấu trúc dự án
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/
+│   ├── Header.jsx          # Navigation bar
+│   ├── Hero.jsx           # Landing section
+│   ├── About.jsx          # Giới thiệu công ty
+│   ├── Services.jsx       # Danh sách dịch vụ
+│   ├── Projects.jsx       # Tổng quan dự án
+│   ├── ProjectKhachHang1.jsx  # Gallery "Gia đình Minh Anh"
+│   ├── Contact.jsx        # Form và thông tin liên hệ
+│   ├── Footer.jsx         # Footer
+│   └── ZaloButton.jsx     # Floating Zalo button
+├── App.js                 # Main app component
+├── App.css               # Main styles
+└── index.js              # Entry point
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+public/
+├── projects/
+│   └── khach-hang-1/     # Thư mục chứa 12 ảnh dự án
+│       ├── 01.jpg
+│       ├── 02.jpg
+│       └── ... (12.jpg)
+└── index.html
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Thêm nội dung
 
-## Learn More
+### Thêm ảnh dự án mới
+1. Tạo thư mục trong `public/projects/`
+2. Thêm ảnh với tên `01.jpg`, `02.jpg`, v.v.
+3. Tạo component gallery tương tự `ProjectKhachHang1.jsx`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Chỉnh sửa thông tin liên hệ
+- Sửa trong `src/components/Contact.jsx`
+- Sửa trong `src/components/Footer.jsx`
+- Sửa trong `src/components/ZaloButton.jsx`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Cập nhật nội dung
+- Hero: `src/components/Hero.jsx`
+- Dịch vụ: `src/components/Services.jsx`
+- Về chúng tôi: `src/components/About.jsx`
 
-### Code Splitting
+## Triển khai
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Website sẵn sàng deploy lên các platform:
+- Vercel
+- Netlify
+- GitHub Pages
+- Hosting truyền thống
 
-### Analyzing the Bundle Size
+Chạy `npm run build` và upload thư mục `build/` lên server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## SEO & Meta
 
-### Making a Progressive Web App
+- Title: "K.A.I Architect — Thiết kế Kiến trúc & Nội thất"
+- Description: Đã tối ưu cho công ty thiết kế
+- Responsive meta viewport
+- Structured cho mobile-friendly
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Liên hệ
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**KTS. Trương Đình Nguyễn Trường**
+- Email: Truongcamlbn@gmail.com
+- Phone: 0941 905 990, 0345 629 288
+- Zalo: 0941 905 990
